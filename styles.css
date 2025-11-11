@@ -1,0 +1,110 @@
+/* ================================
+   CONFIGURACIÓN GENERAL
+=================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  color: #fffbe6;
+  background-color: #1e1b15;
+}
+
+/* ================================
+   FUENTES IMPORTADAS
+=================================== */
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/* ================================
+   SECCIÓN PRINCIPAL
+=================================== */
+.principal {
+  background-image: url("FondoIncas.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* ================================
+   IMÁGENES LATERALES
+=================================== */
+.imagen-izquierda {
+  position: absolute;
+  left: 25px;
+  top: 35px;
+  width: 230px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.imagen-derecha {
+  position: absolute;
+  right: 25px;
+  top: 35px;
+  width: 280px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+/* ================================
+   TÍTULO CENTRAL
+=================================== */
+.titulo {
+  position: relative;
+  top: 33%;
+  transform: translateY(-25%);
+}
+
+.linea1 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2.2em;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #f7e8b0;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+.linea2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 6.5em;
+  color: #ffd86b;
+  text-shadow: 3px 3px 10px rgba(0,0,0,0.7);
+}
+
+/* ================================
+   ENLACES INFERIORES
+=================================== */
+.enlaces {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.enlaces a {
+  background-color: rgba(255, 220, 120, 0.85);
+  color: #1e1b15;
+  text-decoration: none;
+  padding: 12px 40px;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.enlaces a:hover {
+  background-color: rgba(70, 40, 0, 0.8);
+  color: #ffe8a3;
+  transform: scale(1.05);
+}
